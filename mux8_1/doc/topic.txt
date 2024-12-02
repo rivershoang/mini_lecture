@@ -1,0 +1,3 @@
+AIM: To design, simulate, and verify the behavior of an 8-to-1 multiplexer. The MUX will select one of eight input signals based on a 3-bit selection signal and output the selected input.
+
+MỤC TIÊU: Thiết kế, mô phỏng và kiểm tra hành vi của một bộ ghép kênh (multiplexer) 8-to-1. Bộ MUX sẽ chọn một trong tám tín hiệu đầu vào dựa trên tín hiệu chọn 3 bit và xuất ra đầu vào được chọn.
