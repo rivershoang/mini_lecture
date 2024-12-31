@@ -1,0 +1,14 @@
+Mục tiêu: Bộ giải đa hợp (DEMUX) là một thành phần logic số dùng để định tuyến một đầu vào duy nhất đến một trong nhiều đường đầu ra dựa trên tín hiệu chọn. Bộ giải đa hợp 1-to-8 nhận một đầu vào và định tuyến nó đến một trong tám đường đầu ra theo giá trị của đầu vào chọn 3 bit.
+
+Hoạt động: Bộ giải đa hợp 1-to-8 bao gồm:
+
+1 đầu vào (y): Dữ liệu đầu vào sẽ được hướng đến một trong các đầu ra.
+1 đầu vào chọn (sel): Đường chọn có độ rộng 3 bit quyết định đường đầu ra nào sẽ nhận dữ liệu đầu vào.
+8 đường đầu ra (i0->i7): Các đầu ra, trong đó chỉ có một đầu ra nhận dữ liệu đầu vào (y) tùy thuộc vào giá trị của tín hiệu chọn.
+
+Bộ giải đa hợp 1-to-8 hoạt động như sau:
+
+Khi đầu vào chọn 3 bit sel là 000, dữ liệu đầu vào y được chuyển đến i0.
+Khi sel là 001, dữ liệu đầu vào y được định tuyến đến i1.
+Quá trình này tiếp tục cho tất cả các giá trị của s cho đến 111, khi đó y được định tuyến đến i7.
+Với tất cả các giá trị khác của sel, không có đầu ra nào được kích hoạt (tất cả các bit trong i mặc định được đặt về 0).
