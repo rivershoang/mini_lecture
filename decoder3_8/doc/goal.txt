@@ -1,0 +1,31 @@
+Mục tiêu: Mô phỏng và kiểm tra chức năng của bộ giải mã (decoder) 3-đến-8 bằng Verilog. Mục tiêu là đảm bảo rằng với mỗi đầu vào 3-bit, chính xác một đầu ra tương ứng trong 8 đường ra sẽ được kích hoạt (ở mức cao), trong khi tất cả các đầu ra khác vẫn ở mức thấp.
+
+Hoạt động: Bộ giải mã 3-đến-8 nhận đầu vào nhị phân 3-bit và tạo ra 8 đầu ra, với chỉ một đầu ra được kích hoạt (mức logic cao) tại một thời điểm. Đầu ra tương ứng với giá trị nhị phân của đầu vào sẽ được đặt ở mức cao (1), trong khi tất cả các đầu ra khác sẽ ở mức thấp (0). Bộ giải mã thực hiện chức năng "chọn 1 trong 8" dựa trên đầu vào 3-bit.
+
+Chức năng:
+Hoạt động của bộ giải mã 3-đến-8 được định nghĩa như sau:
+
+Khi đầu vào là 000, đầu ra Y0 ở mức cao.
+Khi đầu vào là 001, đầu ra Y1 ở mức cao.
+Khi đầu vào là 010, đầu ra Y2 ở mức cao.
+Khi đầu vào là 011, đầu ra Y3 ở mức cao.
+Khi đầu vào là 100, đầu ra Y4 ở mức cao.
+Khi đầu vào là 101, đầu ra Y5 ở mức cao.
+Khi đầu vào là 110, đầu ra Y6 ở mức cao.
+Khi đầu vào là 111, đầu ra Y7 ở mức cao.
+
+Bảng trạng thái: 
+
+Đầu vào (A[2:0])	Đầu ra (Y[7:0])
+000						00000001
+001						00000010
+010						00000100
+011						00001000
+100						00010000
+101						00100000
+110						01000000
+111						10000000
+
+
+Lưu ý:
+MỞ rộng: Nếu không phải decoder 3 sang 8 mà là 10  sang 1024 thì sao? Ta chỉ cần dịch trái A lần ngõ vào với Y'b1; (đoạn code sẽ trở nên dễ dàng và nhanh hơn) Hoặc ta có thể đặt Y[A] = 1'b1, với Y = Y'b0;
