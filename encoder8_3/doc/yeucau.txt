@@ -1,0 +1,15 @@
+MỤC TIÊU: Mục tiêu của việc mô phỏng bộ mã hóa 8-3 là đảm bảo rằng:
+
+(viết theo kiểu tham số hóa)
+Chức năng: Bộ mã hóa tạo ra biểu diễn nhị phân 3 bit đúng với bit đầu vào có độ ưu tiên cao nhất được đặt là 1.
+Đầu ra chính xác: Đầu ra tương ứng với chỉ số nhị phân của bit đầu vào có độ ưu tiên cao nhất.
+Hành vi: Bộ mã hóa xử lý đúng các tình huống khác nhau, bao gồm khi nhiều bit đầu vào được đặt là 1 hoặc khi tất cả các đầu vào là 0.
+HOẠT ĐỘNG:
+Bộ mã hóa 8-3 nhận đầu vào 8 bit và xuất ra giá trị nhị phân 3 bit tương ứng với chỉ số của bit đầu vào có độ ưu tiên cao nhất được đặt. Độ ưu tiên thường là từ bit có trọng số cao nhất (MSB) đến bit có trọng số thấp nhất (LSB). Nếu nhiều bit được đặt là 1, bộ mã hóa sẽ xuất chỉ số của bit có độ ưu tiên cao nhất.
+
+VÍ dụ 
+input i7 i6 i5 i4 i3 i2 i1 i0       output y2 y1 y0	
+	   0 0 0    0  0  0  0  1				0  0  0 
+	   ....
+	   
+	 ( ngược lại với decoder 3_8)
