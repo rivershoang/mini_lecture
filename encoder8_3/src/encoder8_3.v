@@ -12,7 +12,7 @@ module encoder8_3 #(
 );
 
   // 
-  logic [WIDTH_OUT-1:0] Q;
+  reg [WIDTH_OUT-1:0] Q;
   assign {x,y,z} = Q;
 
   always @(*) begin
