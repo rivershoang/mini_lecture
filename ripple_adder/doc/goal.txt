@@ -1,0 +1,10 @@
+Mục tiêu của bộ cộng Ripple Carry 4-bit:
+
+Mục tiêu của bộ cộng Ripple Carry 4-bit là thực hiện phép cộng của hai số nhị phân 4-bit, kèm theo một tín hiệu carry (có thể có) từ phép cộng trước đó. Bộ cộng này tạo ra một tổng 4-bit và một tín hiệu carry-out, tín hiệu này có thể được truyền sang bộ cộng cấp cao hơn trong các phép cộng nhiều bit. Đây là một khối xây dựng cơ bản cho các phép toán số học trong các mạch số như vi xử lý và ALU.
+
+Nguyên lý hoạt động của bộ cộng Ripple Carry 4-bit:
+
+Bộ cộng Ripple Carry hoạt động bằng cách liên kết nhiều bộ cộng đầy đủ (full adder) đơn bit nối tiếp nhau. Mỗi bộ cộng đầy đủ thực hiện phép cộng các bit tương ứng của hai số nhị phân cùng với carry từ giai đoạn trước đó. Tên gọi "ripple carry" xuất phát từ việc tín hiệu carry-out của mỗi bộ cộng đầy đủ lan truyền (ripple) qua các giai đoạn tiếp theo, ảnh hưởng đến phép cộng của bit tiếp theo.
+
+Viết theo kiểu tham số hóa
+Cần một bộ full adder trước để "ripple"
