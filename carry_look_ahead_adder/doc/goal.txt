@@ -1,0 +1,17 @@
+Bộ cộng Carry Look Ahead Adder (CLA)
+
+Working: like predict carry for fasting caculate than RCA 
+- Focus on carry output 
+- Khi mà ngõ vào A và B là 1 thì carry out luôn là 1, không quan tâm Cin (carry in) --> A & B 
+- trường hợp A = 0, B = 1, Cin = 1 --> nếu A ^ B = 1 và Cin = 1 thì carry out = 1
+
+Nên ta có thể viết lại Carry out là Cout = (A & B) | (A ^ B)&Cin
+
+So we call A&B là carry generated ký hiện G) và (A^B)& Cin là carry propagator (ký hiệu P) (vì phụ thuộc Cin)
+
+
+So we can write Cout that Cout = G + P.Cin
+
+vậy nếu là có các bộ fulladder thì có thể viết Ci = Gi + Pi.(Ci-1). Vì carry out của bộ 1 sẽ đưa vào carry in bộ 2
+
+-Viết theo dạng tham số hóa bộ CLA adder để có thể mở rộng Số lượng tính toán
