@@ -1,0 +1,12 @@
+Mục tiêu:
+Thiết kế, mô phỏng và kiểm tra mạch cộng-trừ nhị phân 4-bit. Mạch này có khả năng thực hiện cả phép cộng và phép trừ dựa trên tín hiệu điều khiển (mode).
+
+Hoạt động:
+Mạch cộng-trừ hoạt động dựa trên giá trị của tín hiệu điều khiển (mode):
+
+Mode = 0: Mạch hoạt động như một mạch cộng nhị phân và thực hiện cộng hai đầu vào 4-bit, A và B. Nó tạo ra một kết quả 4-bit (Sum) cùng với tín hiệu cờ nhớ (Cout).
+Mode = 1: Mạch hoạt động như một mạch trừ. Nó thực hiện phép trừ đầu vào thứ hai (B) từ đầu vào thứ nhất (A) bằng cách sử dụng số bù hai. Kết quả là một hiệu số 4-bit (Sum), và tín hiệu Cout có thể được coi là chỉ báo mượn (bit tràn).
+
+- Viết dạng tham số, và không dùng dấu "-"
+
+phép trừ --> cộng bù 2
